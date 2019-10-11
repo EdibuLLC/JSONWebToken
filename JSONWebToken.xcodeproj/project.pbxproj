@@ -1,0 +1,1266 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7148BE9D1BFE2FA400CD17E7 /* TestUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7148BE9C1BFE2FA400CD17E7 /* TestUtils.swift */; };
+		7148BEA11BFF0B0B00CD17E7 /* SecKeyUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7148BEA01BFF0B0B00CD17E7 /* SecKeyUtils.swift */; };
+		7148BEA31BFF6FF500CD17E7 /* ClaimValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7148BEA21BFF6FF500CD17E7 /* ClaimValidator.swift */; };
+		71642F421D9BB1F2008BBA95 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71642F411D9BB1F2008BBA95 /* AppDelegate.swift */; };
+		71642F441D9BB1F2008BBA95 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71642F431D9BB1F2008BBA95 /* ViewController.swift */; };
+		71642F471D9BB1F2008BBA95 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71642F451D9BB1F2008BBA95 /* Main.storyboard */; };
+		71642F491D9BB1F2008BBA95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71642F481D9BB1F2008BBA95 /* Assets.xcassets */; };
+		71642F4C1D9BB1F2008BBA95 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71642F4A1D9BB1F2008BBA95 /* LaunchScreen.storyboard */; };
+		717ACFD21BFB6842004E01D0 /* JSONWebToken.h in Headers */ = {isa = PBXBuildFile; fileRef = 717ACFD11BFB6842004E01D0 /* JSONWebToken.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		717ACFDE1BFB6842004E01D0 /* RSASSA_PKCS1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717ACFDD1BFB6842004E01D0 /* RSASSA_PKCS1Tests.swift */; };
+		717ACFE91BFB69EB004E01D0 /* JSONWebToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717ACFE81BFB69EB004E01D0 /* JSONWebToken.swift */; };
+		717ACFF51BFB8113004E01D0 /* NSData+Base64URLEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717ACFF41BFB8113004E01D0 /* NSData+Base64URLEncoding.swift */; };
+		717ACFF71BFC7BB8004E01D0 /* SignatureValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717ACFF61BFC7BB8004E01D0 /* SignatureValidator.swift */; };
+		717ACFF91BFC81CB004E01D0 /* HMAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717ACFF81BFC81CB004E01D0 /* HMAC.swift */; };
+		717ACFFC1BFC827E004E01D0 /* NSData+HMAC.h in Headers */ = {isa = PBXBuildFile; fileRef = 717ACFFA1BFC827E004E01D0 /* NSData+HMAC.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		717ACFFD1BFC827E004E01D0 /* NSData+HMAC.m in Sources */ = {isa = PBXBuildFile; fileRef = 717ACFFB1BFC827E004E01D0 /* NSData+HMAC.m */; };
+		717ACFFF1BFC8393004E01D0 /* SignatureAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717ACFFE1BFC8393004E01D0 /* SignatureAlgorithm.swift */; };
+		717FCFD31C060CDA00C7DDEB /* invalid_aud_format.jwt in Resources */ = {isa = PBXBuildFile; fileRef = 717FCFCA1C060CDA00C7DDEB /* invalid_aud_format.jwt */; };
+		717FCFD41C060CDA00C7DDEB /* invalid_exp_format.jwt in Resources */ = {isa = PBXBuildFile; fileRef = 717FCFCB1C060CDA00C7DDEB /* invalid_exp_format.jwt */; };
+		717FCFD51C060CDA00C7DDEB /* invalid_expired.jwt in Resources */ = {isa = PBXBuildFile; fileRef = 717FCFCC1C060CDA00C7DDEB /* invalid_expired.jwt */; };
+		717FCFD61C060CDA00C7DDEB /* invalid_iat_format.jwt in Resources */ = {isa = PBXBuildFile; fileRef = 717FCFCD1C060CDA00C7DDEB /* invalid_iat_format.jwt */; };
+		717FCFD71C060CDA00C7DDEB /* invalid_iss_format.jwt in Resources */ = {isa = PBXBuildFile; fileRef = 717FCFCE1C060CDA00C7DDEB /* invalid_iss_format.jwt */; };
+		717FCFD81C060CDA00C7DDEB /* invalid_jti_format.jwt in Resources */ = {isa = PBXBuildFile; fileRef = 717FCFCF1C060CDA00C7DDEB /* invalid_jti_format.jwt */; };
+		717FCFD91C060CDA00C7DDEB /* invalid_nbf_format.jwt in Resources */ = {isa = PBXBuildFile; fileRef = 717FCFD01C060CDA00C7DDEB /* invalid_nbf_format.jwt */; };
+		717FCFDA1C060CDA00C7DDEB /* invalid_nbf_immature.jwt in Resources */ = {isa = PBXBuildFile; fileRef = 717FCFD11C060CDA00C7DDEB /* invalid_nbf_immature.jwt */; };
+		717FCFDB1C060CDA00C7DDEB /* invalid_sub_format.jwt in Resources */ = {isa = PBXBuildFile; fileRef = 717FCFD21C060CDA00C7DDEB /* invalid_sub_format.jwt */; };
+		718A7DF91C06149900A819DD /* empty2.jwt in Resources */ = {isa = PBXBuildFile; fileRef = 718A7DF81C06149900A819DD /* empty2.jwt */; };
+		718A7DFB1C06175200A819DD /* KeyUtilsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718A7DFA1C06175200A819DD /* KeyUtilsTests.swift */; };
+		718A7E021C06277E00A819DD /* public.exponent in Resources */ = {isa = PBXBuildFile; fileRef = 718A7E001C06277E00A819DD /* public.exponent */; };
+		718A7E031C06277E00A819DD /* public.modulus in Resources */ = {isa = PBXBuildFile; fileRef = 718A7E011C06277E00A819DD /* public.modulus */; };
+		7190899F1C036F6F00A7A209 /* JSONWebToken.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 717ACFCE1BFB6842004E01D0 /* JSONWebToken.framework */; };
+		719089A51C0455B700A7A209 /* GenerateSample.py in Resources */ = {isa = PBXBuildFile; fileRef = 719089A41C0455B700A7A209 /* GenerateSample.py */; };
+		719089A91C045B9700A7A209 /* HS256.jwt in Resources */ = {isa = PBXBuildFile; fileRef = 719089A61C045B9700A7A209 /* HS256.jwt */; };
+		719089AA1C045B9700A7A209 /* HS384.jwt in Resources */ = {isa = PBXBuildFile; fileRef = 719089A71C045B9700A7A209 /* HS384.jwt */; };
+		719089AB1C045B9700A7A209 /* HS512.jwt in Resources */ = {isa = PBXBuildFile; fileRef = 719089A81C045B9700A7A209 /* HS512.jwt */; };
+		719089B11C04649700A7A209 /* private.pem in Resources */ = {isa = PBXBuildFile; fileRef = 719089AC1C04649700A7A209 /* private.pem */; };
+		719089B21C04649700A7A209 /* public.pem in Resources */ = {isa = PBXBuildFile; fileRef = 719089AD1C04649700A7A209 /* public.pem */; };
+		719089B31C04649700A7A209 /* RS256.jwt in Resources */ = {isa = PBXBuildFile; fileRef = 719089AE1C04649700A7A209 /* RS256.jwt */; };
+		719089B41C04649700A7A209 /* RS384.jwt in Resources */ = {isa = PBXBuildFile; fileRef = 719089AF1C04649700A7A209 /* RS384.jwt */; };
+		719089B51C04649700A7A209 /* RS512.jwt in Resources */ = {isa = PBXBuildFile; fileRef = 719089B01C04649700A7A209 /* RS512.jwt */; };
+		719089B91C0477D500A7A209 /* RS256_2.jwt in Resources */ = {isa = PBXBuildFile; fileRef = 719089B61C0477D500A7A209 /* RS256_2.jwt */; };
+		719089BA1C0477D500A7A209 /* RS384_2.jwt in Resources */ = {isa = PBXBuildFile; fileRef = 719089B71C0477D500A7A209 /* RS384_2.jwt */; };
+		719089BB1C0477D500A7A209 /* RS512_2.jwt in Resources */ = {isa = PBXBuildFile; fileRef = 719089B81C0477D500A7A209 /* RS512_2.jwt */; };
+		719089BD1C049E3B00A7A209 /* all_claim_valid_1.jwt in Resources */ = {isa = PBXBuildFile; fileRef = 719089BC1C049E3B00A7A209 /* all_claim_valid_1.jwt */; };
+		719089BF1C049EC400A7A209 /* all_claim_valid_2.jwt in Resources */ = {isa = PBXBuildFile; fileRef = 719089BE1C049EC400A7A209 /* all_claim_valid_2.jwt */; };
+		719089C11C049F1400A7A209 /* ClaimTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719089C01C049F1400A7A209 /* ClaimTests.swift */; };
+		719089C31C049FBE00A7A209 /* all_claim_valid_2_signed.jwt in Resources */ = {isa = PBXBuildFile; fileRef = 719089C21C049FBE00A7A209 /* all_claim_valid_2_signed.jwt */; };
+		719089C51C04AA0100A7A209 /* empty.jwt in Resources */ = {isa = PBXBuildFile; fileRef = 719089C41C04AA0100A7A209 /* empty.jwt */; };
+		719089C81C04AD1500A7A209 /* invalid_structure_2.jwt in Resources */ = {isa = PBXBuildFile; fileRef = 719089C61C04AD1500A7A209 /* invalid_structure_2.jwt */; };
+		719089C91C04AD1500A7A209 /* invalid_structure.jwt in Resources */ = {isa = PBXBuildFile; fileRef = 719089C71C04AD1500A7A209 /* invalid_structure.jwt */; };
+		719089CB1C04AD6B00A7A209 /* DecodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719089CA1C04AD6B00A7A209 /* DecodeTests.swift */; };
+		719089CF1C04AFED00A7A209 /* invalid_header_base64.jwt in Resources */ = {isa = PBXBuildFile; fileRef = 719089CC1C04AFED00A7A209 /* invalid_header_base64.jwt */; };
+		719089D01C04AFED00A7A209 /* invalid_payload_base64.jwt in Resources */ = {isa = PBXBuildFile; fileRef = 719089CD1C04AFED00A7A209 /* invalid_payload_base64.jwt */; };
+		719089D11C04AFED00A7A209 /* invalid_signature_base64.jwt in Resources */ = {isa = PBXBuildFile; fileRef = 719089CE1C04AFED00A7A209 /* invalid_signature_base64.jwt */; };
+		719089D41C04B6B900A7A209 /* invalid_header_json.jwt in Resources */ = {isa = PBXBuildFile; fileRef = 719089D21C04B6B900A7A209 /* invalid_header_json.jwt */; };
+		719089D51C04B6B900A7A209 /* invalid_payload_json.jwt in Resources */ = {isa = PBXBuildFile; fileRef = 719089D31C04B6B900A7A209 /* invalid_payload_json.jwt */; };
+		719089D81C04B86900A7A209 /* invalid_payload_json_structure.jwt in Resources */ = {isa = PBXBuildFile; fileRef = 719089D61C04B86900A7A209 /* invalid_payload_json_structure.jwt */; };
+		719089D91C04B86900A7A209 /* invalid_header_json_structure.jwt in Resources */ = {isa = PBXBuildFile; fileRef = 719089D71C04B86900A7A209 /* invalid_header_json_structure.jwt */; };
+		719089DE1C04BD2B00A7A209 /* invalid_missing_alg.jwt in Resources */ = {isa = PBXBuildFile; fileRef = 719089DA1C04BD2B00A7A209 /* invalid_missing_alg.jwt */; };
+		719089DF1C04BD2B00A7A209 /* invalid_alg.jwt in Resources */ = {isa = PBXBuildFile; fileRef = 719089DB1C04BD2B00A7A209 /* invalid_alg.jwt */; };
+		719089E01C04BD2B00A7A209 /* valid_missing_typ.jwt in Resources */ = {isa = PBXBuildFile; fileRef = 719089DC1C04BD2B00A7A209 /* valid_missing_typ.jwt */; };
+		719089E11C04BD2B00A7A209 /* invalid_typ.jwt in Resources */ = {isa = PBXBuildFile; fileRef = 719089DD1C04BD2B00A7A209 /* invalid_typ.jwt */; };
+		719156A21D1D3BE900FC55C9 /* JSONWebToken.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 719156981D1D3BE900FC55C9 /* JSONWebToken.framework */; };
+		719156AF1D1D3BF900FC55C9 /* JSONWebToken.h in Headers */ = {isa = PBXBuildFile; fileRef = 717ACFD11BFB6842004E01D0 /* JSONWebToken.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		719156B01D1D3C0F00FC55C9 /* TestCertificate.cer in Resources */ = {isa = PBXBuildFile; fileRef = 71D9179F1C07573300FA5CDE /* TestCertificate.cer */; };
+		719156B11D1D3C0F00FC55C9 /* public.exponent in Resources */ = {isa = PBXBuildFile; fileRef = 718A7E001C06277E00A819DD /* public.exponent */; };
+		719156B21D1D3C0F00FC55C9 /* public.modulus in Resources */ = {isa = PBXBuildFile; fileRef = 718A7E011C06277E00A819DD /* public.modulus */; };
+		719156B31D1D3C0F00FC55C9 /* invalid_aud_format.jwt in Resources */ = {isa = PBXBuildFile; fileRef = 717FCFCA1C060CDA00C7DDEB /* invalid_aud_format.jwt */; };
+		719156B41D1D3C0F00FC55C9 /* invalid_exp_format.jwt in Resources */ = {isa = PBXBuildFile; fileRef = 717FCFCB1C060CDA00C7DDEB /* invalid_exp_format.jwt */; };
+		719156B51D1D3C0F00FC55C9 /* invalid_expired.jwt in Resources */ = {isa = PBXBuildFile; fileRef = 717FCFCC1C060CDA00C7DDEB /* invalid_expired.jwt */; };
+		719156B61D1D3C0F00FC55C9 /* invalid_iat_format.jwt in Resources */ = {isa = PBXBuildFile; fileRef = 717FCFCD1C060CDA00C7DDEB /* invalid_iat_format.jwt */; };
+		719156B71D1D3C0F00FC55C9 /* invalid_iss_format.jwt in Resources */ = {isa = PBXBuildFile; fileRef = 717FCFCE1C060CDA00C7DDEB /* invalid_iss_format.jwt */; };
+		719156B81D1D3C0F00FC55C9 /* invalid_jti_format.jwt in Resources */ = {isa = PBXBuildFile; fileRef = 717FCFCF1C060CDA00C7DDEB /* invalid_jti_format.jwt */; };
+		719156B91D1D3C0F00FC55C9 /* invalid_nbf_format.jwt in Resources */ = {isa = PBXBuildFile; fileRef = 717FCFD01C060CDA00C7DDEB /* invalid_nbf_format.jwt */; };
+		719156BA1D1D3C0F00FC55C9 /* invalid_nbf_immature.jwt in Resources */ = {isa = PBXBuildFile; fileRef = 717FCFD11C060CDA00C7DDEB /* invalid_nbf_immature.jwt */; };
+		719156BB1D1D3C0F00FC55C9 /* invalid_sub_format.jwt in Resources */ = {isa = PBXBuildFile; fileRef = 717FCFD21C060CDA00C7DDEB /* invalid_sub_format.jwt */; };
+		719156BC1D1D3C0F00FC55C9 /* ES256.jwt in Resources */ = {isa = PBXBuildFile; fileRef = 719454131C05FE510043493C /* ES256.jwt */; };
+		719156BD1D1D3C0F00FC55C9 /* ES384.jwt in Resources */ = {isa = PBXBuildFile; fileRef = 719454141C05FE510043493C /* ES384.jwt */; };
+		719156BE1D1D3C0F00FC55C9 /* ES512.jwt in Resources */ = {isa = PBXBuildFile; fileRef = 719454151C05FE510043493C /* ES512.jwt */; };
+		719156BF1D1D3C0F00FC55C9 /* PS256.jwt in Resources */ = {isa = PBXBuildFile; fileRef = 7194540B1C05FBBB0043493C /* PS256.jwt */; };
+		719156C01D1D3C0F00FC55C9 /* PS384.jwt in Resources */ = {isa = PBXBuildFile; fileRef = 7194540C1C05FBBB0043493C /* PS384.jwt */; };
+		719156C11D1D3C0F00FC55C9 /* PS512.jwt in Resources */ = {isa = PBXBuildFile; fileRef = 7194540D1C05FBBB0043493C /* PS512.jwt */; };
+		719156C21D1D3C0F00FC55C9 /* identity.p12 in Resources */ = {isa = PBXBuildFile; fileRef = 719454091C05F4CB0043493C /* identity.p12 */; };
+		719156C31D1D3C0F00FC55C9 /* private.pem in Resources */ = {isa = PBXBuildFile; fileRef = 719089AC1C04649700A7A209 /* private.pem */; };
+		719156C41D1D3C0F00FC55C9 /* public.pem in Resources */ = {isa = PBXBuildFile; fileRef = 719089AD1C04649700A7A209 /* public.pem */; };
+		719156C51D1D3C0F00FC55C9 /* invalid_missing_alg.jwt in Resources */ = {isa = PBXBuildFile; fileRef = 719089DA1C04BD2B00A7A209 /* invalid_missing_alg.jwt */; };
+		719156C61D1D3C0F00FC55C9 /* invalid_alg.jwt in Resources */ = {isa = PBXBuildFile; fileRef = 719089DB1C04BD2B00A7A209 /* invalid_alg.jwt */; };
+		719156C71D1D3C0F00FC55C9 /* valid_missing_typ.jwt in Resources */ = {isa = PBXBuildFile; fileRef = 719089DC1C04BD2B00A7A209 /* valid_missing_typ.jwt */; };
+		719156C81D1D3C0F00FC55C9 /* invalid_typ.jwt in Resources */ = {isa = PBXBuildFile; fileRef = 719089DD1C04BD2B00A7A209 /* invalid_typ.jwt */; };
+		719156C91D1D3C0F00FC55C9 /* invalid_payload_json_structure.jwt in Resources */ = {isa = PBXBuildFile; fileRef = 719089D61C04B86900A7A209 /* invalid_payload_json_structure.jwt */; };
+		719156CA1D1D3C0F00FC55C9 /* invalid_header_json_structure.jwt in Resources */ = {isa = PBXBuildFile; fileRef = 719089D71C04B86900A7A209 /* invalid_header_json_structure.jwt */; };
+		719156CB1D1D3C0F00FC55C9 /* invalid_header_json.jwt in Resources */ = {isa = PBXBuildFile; fileRef = 719089D21C04B6B900A7A209 /* invalid_header_json.jwt */; };
+		719156CC1D1D3C0F00FC55C9 /* invalid_payload_json.jwt in Resources */ = {isa = PBXBuildFile; fileRef = 719089D31C04B6B900A7A209 /* invalid_payload_json.jwt */; };
+		719156CD1D1D3C0F00FC55C9 /* invalid_header_base64.jwt in Resources */ = {isa = PBXBuildFile; fileRef = 719089CC1C04AFED00A7A209 /* invalid_header_base64.jwt */; };
+		719156CE1D1D3C0F00FC55C9 /* invalid_payload_base64.jwt in Resources */ = {isa = PBXBuildFile; fileRef = 719089CD1C04AFED00A7A209 /* invalid_payload_base64.jwt */; };
+		719156CF1D1D3C0F00FC55C9 /* invalid_signature_base64.jwt in Resources */ = {isa = PBXBuildFile; fileRef = 719089CE1C04AFED00A7A209 /* invalid_signature_base64.jwt */; };
+		719156D01D1D3C0F00FC55C9 /* invalid_structure_2.jwt in Resources */ = {isa = PBXBuildFile; fileRef = 719089C61C04AD1500A7A209 /* invalid_structure_2.jwt */; };
+		719156D11D1D3C0F00FC55C9 /* invalid_structure.jwt in Resources */ = {isa = PBXBuildFile; fileRef = 719089C71C04AD1500A7A209 /* invalid_structure.jwt */; };
+		719156D21D1D3C0F00FC55C9 /* all_claim_valid_1.jwt in Resources */ = {isa = PBXBuildFile; fileRef = 719089BC1C049E3B00A7A209 /* all_claim_valid_1.jwt */; };
+		719156D31D1D3C0F00FC55C9 /* all_claim_valid_2.jwt in Resources */ = {isa = PBXBuildFile; fileRef = 719089BE1C049EC400A7A209 /* all_claim_valid_2.jwt */; };
+		719156D41D1D3C0F00FC55C9 /* all_claim_valid_2_signed.jwt in Resources */ = {isa = PBXBuildFile; fileRef = 719089C21C049FBE00A7A209 /* all_claim_valid_2_signed.jwt */; };
+		719156D51D1D3C0F00FC55C9 /* RS256_2.jwt in Resources */ = {isa = PBXBuildFile; fileRef = 719089B61C0477D500A7A209 /* RS256_2.jwt */; };
+		719156D61D1D3C0F00FC55C9 /* RS384_2.jwt in Resources */ = {isa = PBXBuildFile; fileRef = 719089B71C0477D500A7A209 /* RS384_2.jwt */; };
+		719156D71D1D3C0F00FC55C9 /* RS512_2.jwt in Resources */ = {isa = PBXBuildFile; fileRef = 719089B81C0477D500A7A209 /* RS512_2.jwt */; };
+		719156D81D1D3C0F00FC55C9 /* RS256.jwt in Resources */ = {isa = PBXBuildFile; fileRef = 719089AE1C04649700A7A209 /* RS256.jwt */; };
+		719156D91D1D3C0F00FC55C9 /* RS384.jwt in Resources */ = {isa = PBXBuildFile; fileRef = 719089AF1C04649700A7A209 /* RS384.jwt */; };
+		719156DA1D1D3C0F00FC55C9 /* RS512.jwt in Resources */ = {isa = PBXBuildFile; fileRef = 719089B01C04649700A7A209 /* RS512.jwt */; };
+		719156DB1D1D3C0F00FC55C9 /* HS256.jwt in Resources */ = {isa = PBXBuildFile; fileRef = 719089A61C045B9700A7A209 /* HS256.jwt */; };
+		719156DC1D1D3C0F00FC55C9 /* HS384.jwt in Resources */ = {isa = PBXBuildFile; fileRef = 719089A71C045B9700A7A209 /* HS384.jwt */; };
+		719156DD1D1D3C0F00FC55C9 /* HS512.jwt in Resources */ = {isa = PBXBuildFile; fileRef = 719089A81C045B9700A7A209 /* HS512.jwt */; };
+		719156DE1D1D3C0F00FC55C9 /* empty2.jwt in Resources */ = {isa = PBXBuildFile; fileRef = 718A7DF81C06149900A819DD /* empty2.jwt */; };
+		719156DF1D1D3C0F00FC55C9 /* empty.jwt in Resources */ = {isa = PBXBuildFile; fileRef = 719089C41C04AA0100A7A209 /* empty.jwt */; };
+		719156E01D1D3C0F00FC55C9 /* GenerateSample.py in Resources */ = {isa = PBXBuildFile; fileRef = 719089A41C0455B700A7A209 /* GenerateSample.py */; };
+		719156E11D1D3C1900FC55C9 /* HMACTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EA69A41C035EA90081AF85 /* HMACTests.swift */; };
+		719156E21D1D3C1900FC55C9 /* RSASSA_PKCS1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717ACFDD1BFB6842004E01D0 /* RSASSA_PKCS1Tests.swift */; };
+		719156E31D1D3C1900FC55C9 /* TestUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7148BE9C1BFE2FA400CD17E7 /* TestUtils.swift */; };
+		719156E41D1D3C1900FC55C9 /* ClaimTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719089C01C049F1400A7A209 /* ClaimTests.swift */; };
+		719156E51D1D3C1900FC55C9 /* RSASSA_PSSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719454111C05FBC90043493C /* RSASSA_PSSTests.swift */; };
+		719156E61D1D3C1900FC55C9 /* ECDSATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719454191C05FE990043493C /* ECDSATests.swift */; };
+		719156E71D1D3C1900FC55C9 /* DecodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719089CA1C04AD6B00A7A209 /* DecodeTests.swift */; };
+		719156E81D1D3C1900FC55C9 /* GenerateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7194541B1C0600EA0043493C /* GenerateTests.swift */; };
+		719156E91D1D3C1900FC55C9 /* KeyUtilsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718A7DFA1C06175200A819DD /* KeyUtilsTests.swift */; };
+		719156EA1D1D3C8F00FC55C9 /* JSONWebToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717ACFE81BFB69EB004E01D0 /* JSONWebToken.swift */; };
+		719156EB1D1D3C8F00FC55C9 /* SignatureAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717ACFFE1BFC8393004E01D0 /* SignatureAlgorithm.swift */; };
+		719156EC1D1D3C8F00FC55C9 /* TokenSigner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EA699E1C0323320081AF85 /* TokenSigner.swift */; };
+		719156ED1D1D3C9300FC55C9 /* SignatureValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717ACFF61BFC7BB8004E01D0 /* SignatureValidator.swift */; };
+		719156EE1D1D3C9300FC55C9 /* ClaimValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7148BEA21BFF6FF500CD17E7 /* ClaimValidator.swift */; };
+		719156EF1D1D3C9300FC55C9 /* TokenValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EA699B1C0320720081AF85 /* TokenValidator.swift */; };
+		719156F01D1D3C9B00FC55C9 /* HMAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717ACFF81BFC81CB004E01D0 /* HMAC.swift */; };
+		719156F11D1D3C9B00FC55C9 /* RSASSA_PKCS1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D1C1211BFCB92200211578 /* RSASSA_PKCS1.swift */; };
+		719156F21D1D3C9B00FC55C9 /* NSData+SHA.m in Sources */ = {isa = PBXBuildFile; fileRef = 71D1C1241BFE236F00211578 /* NSData+SHA.m */; };
+		719156F31D1D3C9B00FC55C9 /* NSData+HMAC.m in Sources */ = {isa = PBXBuildFile; fileRef = 717ACFFB1BFC827E004E01D0 /* NSData+HMAC.m */; };
+		719156F41D1D3C9B00FC55C9 /* NSData+Base64URLEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717ACFF41BFB8113004E01D0 /* NSData+Base64URLEncoding.swift */; };
+		719156F51D1D3C9B00FC55C9 /* SecKeyUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7148BEA01BFF0B0B00CD17E7 /* SecKeyUtils.swift */; };
+		719156F61D1D3C9E00FC55C9 /* NSData+SHA.h in Headers */ = {isa = PBXBuildFile; fileRef = 71D1C1231BFE236F00211578 /* NSData+SHA.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		719156F71D1D3C9E00FC55C9 /* NSData+HMAC.h in Headers */ = {isa = PBXBuildFile; fileRef = 717ACFFA1BFC827E004E01D0 /* NSData+HMAC.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		71936BEF1C0361D60005DF5A /* HMACTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EA69A41C035EA90081AF85 /* HMACTests.swift */; };
+		7194540A1C05F6AC0043493C /* identity.p12 in Resources */ = {isa = PBXBuildFile; fileRef = 719454091C05F4CB0043493C /* identity.p12 */; };
+		7194540E1C05FBBB0043493C /* PS256.jwt in Resources */ = {isa = PBXBuildFile; fileRef = 7194540B1C05FBBB0043493C /* PS256.jwt */; };
+		7194540F1C05FBBB0043493C /* PS384.jwt in Resources */ = {isa = PBXBuildFile; fileRef = 7194540C1C05FBBB0043493C /* PS384.jwt */; };
+		719454101C05FBBB0043493C /* PS512.jwt in Resources */ = {isa = PBXBuildFile; fileRef = 7194540D1C05FBBB0043493C /* PS512.jwt */; };
+		719454121C05FBC90043493C /* RSASSA_PSSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719454111C05FBC90043493C /* RSASSA_PSSTests.swift */; };
+		719454161C05FE510043493C /* ES256.jwt in Resources */ = {isa = PBXBuildFile; fileRef = 719454131C05FE510043493C /* ES256.jwt */; };
+		719454171C05FE510043493C /* ES384.jwt in Resources */ = {isa = PBXBuildFile; fileRef = 719454141C05FE510043493C /* ES384.jwt */; };
+		719454181C05FE510043493C /* ES512.jwt in Resources */ = {isa = PBXBuildFile; fileRef = 719454151C05FE510043493C /* ES512.jwt */; };
+		7194541A1C05FE990043493C /* ECDSATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719454191C05FE990043493C /* ECDSATests.swift */; };
+		7194541C1C0600EA0043493C /* GenerateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7194541B1C0600EA0043493C /* GenerateTests.swift */; };
+		71D1C1221BFCB92200211578 /* RSASSA_PKCS1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D1C1211BFCB92200211578 /* RSASSA_PKCS1.swift */; };
+		71D1C1251BFE236F00211578 /* NSData+SHA.h in Headers */ = {isa = PBXBuildFile; fileRef = 71D1C1231BFE236F00211578 /* NSData+SHA.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		71D1C1261BFE236F00211578 /* NSData+SHA.m in Sources */ = {isa = PBXBuildFile; fileRef = 71D1C1241BFE236F00211578 /* NSData+SHA.m */; };
+		71D917A01C07573300FA5CDE /* TestCertificate.cer in Resources */ = {isa = PBXBuildFile; fileRef = 71D9179F1C07573300FA5CDE /* TestCertificate.cer */; };
+		71EA699C1C0320720081AF85 /* TokenValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EA699B1C0320720081AF85 /* TokenValidator.swift */; };
+		71EA699F1C0323320081AF85 /* TokenSigner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EA699E1C0323320081AF85 /* TokenSigner.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		71642F511D9BB210008BBA95 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 717ACFC51BFB6842004E01D0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 71642F3E1D9BB1F2008BBA95;
+			remoteInfo = TestContainer;
+		};
+		7190899D1C036F6B00A7A209 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 717ACFC51BFB6842004E01D0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 717ACFCD1BFB6842004E01D0;
+			remoteInfo = JSONWebToken;
+		};
+		719156A31D1D3BE900FC55C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 717ACFC51BFB6842004E01D0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 719156971D1D3BE900FC55C9;
+			remoteInfo = "JSONWebToken tvOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7148BE9C1BFE2FA400CD17E7 /* TestUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestUtils.swift; sourceTree = "<group>"; };
+		7148BEA01BFF0B0B00CD17E7 /* SecKeyUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecKeyUtils.swift; sourceTree = "<group>"; };
+		7148BEA21BFF6FF500CD17E7 /* ClaimValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClaimValidator.swift; sourceTree = "<group>"; };
+		71642F3A1D9BB138008BBA95 /* JSONWebToken.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = JSONWebToken.entitlements; sourceTree = "<group>"; };
+		71642F3F1D9BB1F2008BBA95 /* TestContainer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestContainer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		71642F411D9BB1F2008BBA95 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		71642F431D9BB1F2008BBA95 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		71642F461D9BB1F2008BBA95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		71642F481D9BB1F2008BBA95 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		71642F4B1D9BB1F2008BBA95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		71642F4D1D9BB1F2008BBA95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		717ACFCE1BFB6842004E01D0 /* JSONWebToken.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JSONWebToken.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		717ACFD11BFB6842004E01D0 /* JSONWebToken.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSONWebToken.h; sourceTree = "<group>"; };
+		717ACFD31BFB6842004E01D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		717ACFD81BFB6842004E01D0 /* JSONWebTokenTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JSONWebTokenTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		717ACFDD1BFB6842004E01D0 /* RSASSA_PKCS1Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSASSA_PKCS1Tests.swift; sourceTree = "<group>"; };
+		717ACFDF1BFB6842004E01D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		717ACFE81BFB69EB004E01D0 /* JSONWebToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONWebToken.swift; sourceTree = "<group>"; };
+		717ACFF41BFB8113004E01D0 /* NSData+Base64URLEncoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSData+Base64URLEncoding.swift"; sourceTree = "<group>"; };
+		717ACFF61BFC7BB8004E01D0 /* SignatureValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignatureValidator.swift; sourceTree = "<group>"; };
+		717ACFF81BFC81CB004E01D0 /* HMAC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HMAC.swift; sourceTree = "<group>"; };
+		717ACFFA1BFC827E004E01D0 /* NSData+HMAC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+HMAC.h"; sourceTree = "<group>"; };
+		717ACFFB1BFC827E004E01D0 /* NSData+HMAC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+HMAC.m"; sourceTree = "<group>"; };
+		717ACFFE1BFC8393004E01D0 /* SignatureAlgorithm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignatureAlgorithm.swift; sourceTree = "<group>"; };
+		717FCFCA1C060CDA00C7DDEB /* invalid_aud_format.jwt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = invalid_aud_format.jwt; sourceTree = "<group>"; };
+		717FCFCB1C060CDA00C7DDEB /* invalid_exp_format.jwt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = invalid_exp_format.jwt; sourceTree = "<group>"; };
+		717FCFCC1C060CDA00C7DDEB /* invalid_expired.jwt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = invalid_expired.jwt; sourceTree = "<group>"; };
+		717FCFCD1C060CDA00C7DDEB /* invalid_iat_format.jwt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = invalid_iat_format.jwt; sourceTree = "<group>"; };
+		717FCFCE1C060CDA00C7DDEB /* invalid_iss_format.jwt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = invalid_iss_format.jwt; sourceTree = "<group>"; };
+		717FCFCF1C060CDA00C7DDEB /* invalid_jti_format.jwt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = invalid_jti_format.jwt; sourceTree = "<group>"; };
+		717FCFD01C060CDA00C7DDEB /* invalid_nbf_format.jwt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = invalid_nbf_format.jwt; sourceTree = "<group>"; };
+		717FCFD11C060CDA00C7DDEB /* invalid_nbf_immature.jwt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = invalid_nbf_immature.jwt; sourceTree = "<group>"; };
+		717FCFD21C060CDA00C7DDEB /* invalid_sub_format.jwt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = invalid_sub_format.jwt; sourceTree = "<group>"; };
+		718A7DF81C06149900A819DD /* empty2.jwt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = empty2.jwt; sourceTree = "<group>"; };
+		718A7DFA1C06175200A819DD /* KeyUtilsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyUtilsTests.swift; sourceTree = "<group>"; };
+		718A7E001C06277E00A819DD /* public.exponent */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = public.exponent; sourceTree = "<group>"; };
+		718A7E011C06277E00A819DD /* public.modulus */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = public.modulus; sourceTree = "<group>"; };
+		719089A41C0455B700A7A209 /* GenerateSample.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = GenerateSample.py; sourceTree = "<group>"; };
+		719089A61C045B9700A7A209 /* HS256.jwt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HS256.jwt; sourceTree = "<group>"; };
+		719089A71C045B9700A7A209 /* HS384.jwt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HS384.jwt; sourceTree = "<group>"; };
+		719089A81C045B9700A7A209 /* HS512.jwt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HS512.jwt; sourceTree = "<group>"; };
+		719089AC1C04649700A7A209 /* private.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = private.pem; sourceTree = "<group>"; };
+		719089AD1C04649700A7A209 /* public.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = public.pem; sourceTree = "<group>"; };
+		719089AE1C04649700A7A209 /* RS256.jwt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = RS256.jwt; sourceTree = "<group>"; };
+		719089AF1C04649700A7A209 /* RS384.jwt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = RS384.jwt; sourceTree = "<group>"; };
+		719089B01C04649700A7A209 /* RS512.jwt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = RS512.jwt; sourceTree = "<group>"; };
+		719089B61C0477D500A7A209 /* RS256_2.jwt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = RS256_2.jwt; sourceTree = "<group>"; };
+		719089B71C0477D500A7A209 /* RS384_2.jwt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = RS384_2.jwt; sourceTree = "<group>"; };
+		719089B81C0477D500A7A209 /* RS512_2.jwt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = RS512_2.jwt; sourceTree = "<group>"; };
+		719089BC1C049E3B00A7A209 /* all_claim_valid_1.jwt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = all_claim_valid_1.jwt; sourceTree = "<group>"; };
+		719089BE1C049EC400A7A209 /* all_claim_valid_2.jwt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = all_claim_valid_2.jwt; sourceTree = "<group>"; };
+		719089C01C049F1400A7A209 /* ClaimTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = ClaimTests.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		719089C21C049FBE00A7A209 /* all_claim_valid_2_signed.jwt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = all_claim_valid_2_signed.jwt; sourceTree = "<group>"; };
+		719089C41C04AA0100A7A209 /* empty.jwt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = empty.jwt; sourceTree = "<group>"; };
+		719089C61C04AD1500A7A209 /* invalid_structure_2.jwt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = invalid_structure_2.jwt; sourceTree = "<group>"; };
+		719089C71C04AD1500A7A209 /* invalid_structure.jwt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = invalid_structure.jwt; sourceTree = "<group>"; };
+		719089CA1C04AD6B00A7A209 /* DecodeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecodeTests.swift; sourceTree = "<group>"; };
+		719089CC1C04AFED00A7A209 /* invalid_header_base64.jwt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = invalid_header_base64.jwt; sourceTree = "<group>"; };
+		719089CD1C04AFED00A7A209 /* invalid_payload_base64.jwt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = invalid_payload_base64.jwt; sourceTree = "<group>"; };
+		719089CE1C04AFED00A7A209 /* invalid_signature_base64.jwt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = invalid_signature_base64.jwt; sourceTree = "<group>"; };
+		719089D21C04B6B900A7A209 /* invalid_header_json.jwt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = invalid_header_json.jwt; sourceTree = "<group>"; };
+		719089D31C04B6B900A7A209 /* invalid_payload_json.jwt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = invalid_payload_json.jwt; sourceTree = "<group>"; };
+		719089D61C04B86900A7A209 /* invalid_payload_json_structure.jwt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = invalid_payload_json_structure.jwt; sourceTree = "<group>"; };
+		719089D71C04B86900A7A209 /* invalid_header_json_structure.jwt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = invalid_header_json_structure.jwt; sourceTree = "<group>"; };
+		719089DA1C04BD2B00A7A209 /* invalid_missing_alg.jwt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = invalid_missing_alg.jwt; sourceTree = "<group>"; };
+		719089DB1C04BD2B00A7A209 /* invalid_alg.jwt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = invalid_alg.jwt; sourceTree = "<group>"; };
+		719089DC1C04BD2B00A7A209 /* valid_missing_typ.jwt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = valid_missing_typ.jwt; sourceTree = "<group>"; };
+		719089DD1C04BD2B00A7A209 /* invalid_typ.jwt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = invalid_typ.jwt; sourceTree = "<group>"; };
+		719156981D1D3BE900FC55C9 /* JSONWebToken.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JSONWebToken.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7191569C1D1D3BE900FC55C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		719156A11D1D3BE900FC55C9 /* JSONWebToken tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "JSONWebToken tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		719156A81D1D3BE900FC55C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		719454091C05F4CB0043493C /* identity.p12 */ = {isa = PBXFileReference; lastKnownFileType = file; path = identity.p12; sourceTree = "<group>"; };
+		7194540B1C05FBBB0043493C /* PS256.jwt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PS256.jwt; sourceTree = "<group>"; };
+		7194540C1C05FBBB0043493C /* PS384.jwt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PS384.jwt; sourceTree = "<group>"; };
+		7194540D1C05FBBB0043493C /* PS512.jwt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PS512.jwt; sourceTree = "<group>"; };
+		719454111C05FBC90043493C /* RSASSA_PSSTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSASSA_PSSTests.swift; sourceTree = "<group>"; };
+		719454131C05FE510043493C /* ES256.jwt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ES256.jwt; sourceTree = "<group>"; };
+		719454141C05FE510043493C /* ES384.jwt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ES384.jwt; sourceTree = "<group>"; };
+		719454151C05FE510043493C /* ES512.jwt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ES512.jwt; sourceTree = "<group>"; };
+		719454191C05FE990043493C /* ECDSATests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ECDSATests.swift; sourceTree = "<group>"; };
+		7194541B1C0600EA0043493C /* GenerateTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenerateTests.swift; sourceTree = "<group>"; };
+		71D1C1211BFCB92200211578 /* RSASSA_PKCS1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSASSA_PKCS1.swift; sourceTree = "<group>"; };
+		71D1C1231BFE236F00211578 /* NSData+SHA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+SHA.h"; sourceTree = "<group>"; };
+		71D1C1241BFE236F00211578 /* NSData+SHA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+SHA.m"; sourceTree = "<group>"; };
+		71D9179F1C07573300FA5CDE /* TestCertificate.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = TestCertificate.cer; sourceTree = "<group>"; };
+		71EA699B1C0320720081AF85 /* TokenValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TokenValidator.swift; sourceTree = "<group>"; };
+		71EA699E1C0323320081AF85 /* TokenSigner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TokenSigner.swift; sourceTree = "<group>"; };
+		71EA69A41C035EA90081AF85 /* HMACTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HMACTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		71642F3C1D9BB1F2008BBA95 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		717ACFCA1BFB6842004E01D0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		717ACFD51BFB6842004E01D0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7190899F1C036F6F00A7A209 /* JSONWebToken.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		719156941D1D3BE900FC55C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7191569E1D1D3BE900FC55C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				719156A21D1D3BE900FC55C9 /* JSONWebToken.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		71642F401D9BB1F2008BBA95 /* TestContainer */ = {
+			isa = PBXGroup;
+			children = (
+				71642F411D9BB1F2008BBA95 /* AppDelegate.swift */,
+				71642F431D9BB1F2008BBA95 /* ViewController.swift */,
+				71642F451D9BB1F2008BBA95 /* Main.storyboard */,
+				71642F481D9BB1F2008BBA95 /* Assets.xcassets */,
+				71642F4A1D9BB1F2008BBA95 /* LaunchScreen.storyboard */,
+				71642F4D1D9BB1F2008BBA95 /* Info.plist */,
+			);
+			path = TestContainer;
+			sourceTree = "<group>";
+		};
+		717ACFC41BFB6842004E01D0 = {
+			isa = PBXGroup;
+			children = (
+				717ACFD01BFB6842004E01D0 /* JSONWebToken */,
+				717ACFDC1BFB6842004E01D0 /* JSONWebTokenTests */,
+				719156991D1D3BE900FC55C9 /* JSONWebToken tvOS */,
+				719156A51D1D3BE900FC55C9 /* JSONWebToken tvOSTests */,
+				71642F401D9BB1F2008BBA95 /* TestContainer */,
+				717ACFCF1BFB6842004E01D0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		717ACFCF1BFB6842004E01D0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				717ACFCE1BFB6842004E01D0 /* JSONWebToken.framework */,
+				717ACFD81BFB6842004E01D0 /* JSONWebTokenTests.xctest */,
+				719156981D1D3BE900FC55C9 /* JSONWebToken.framework */,
+				719156A11D1D3BE900FC55C9 /* JSONWebToken tvOSTests.xctest */,
+				71642F3F1D9BB1F2008BBA95 /* TestContainer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		717ACFD01BFB6842004E01D0 /* JSONWebToken */ = {
+			isa = PBXGroup;
+			children = (
+				717ACFD11BFB6842004E01D0 /* JSONWebToken.h */,
+				717ACFD31BFB6842004E01D0 /* Info.plist */,
+				717ACFE81BFB69EB004E01D0 /* JSONWebToken.swift */,
+				717ACFFE1BFC8393004E01D0 /* SignatureAlgorithm.swift */,
+				71EA699E1C0323320081AF85 /* TokenSigner.swift */,
+				71EA699A1C0320630081AF85 /* Validator */,
+				717ACFF81BFC81CB004E01D0 /* HMAC.swift */,
+				71D1C1211BFCB92200211578 /* RSASSA_PKCS1.swift */,
+				71D1C1231BFE236F00211578 /* NSData+SHA.h */,
+				71D1C1241BFE236F00211578 /* NSData+SHA.m */,
+				717ACFFA1BFC827E004E01D0 /* NSData+HMAC.h */,
+				717ACFFB1BFC827E004E01D0 /* NSData+HMAC.m */,
+				717ACFF41BFB8113004E01D0 /* NSData+Base64URLEncoding.swift */,
+				7148BEA01BFF0B0B00CD17E7 /* SecKeyUtils.swift */,
+				71642F3A1D9BB138008BBA95 /* JSONWebToken.entitlements */,
+			);
+			path = JSONWebToken;
+			sourceTree = "<group>";
+		};
+		717ACFDC1BFB6842004E01D0 /* JSONWebTokenTests */ = {
+			isa = PBXGroup;
+			children = (
+				71EA69A61C035EB50081AF85 /* Samples */,
+				71EA69A41C035EA90081AF85 /* HMACTests.swift */,
+				717ACFDD1BFB6842004E01D0 /* RSASSA_PKCS1Tests.swift */,
+				7148BE9C1BFE2FA400CD17E7 /* TestUtils.swift */,
+				717ACFDF1BFB6842004E01D0 /* Info.plist */,
+				719089C01C049F1400A7A209 /* ClaimTests.swift */,
+				719454111C05FBC90043493C /* RSASSA_PSSTests.swift */,
+				719454191C05FE990043493C /* ECDSATests.swift */,
+				719089CA1C04AD6B00A7A209 /* DecodeTests.swift */,
+				7194541B1C0600EA0043493C /* GenerateTests.swift */,
+				718A7DFA1C06175200A819DD /* KeyUtilsTests.swift */,
+			);
+			path = JSONWebTokenTests;
+			sourceTree = "<group>";
+		};
+		719156991D1D3BE900FC55C9 /* JSONWebToken tvOS */ = {
+			isa = PBXGroup;
+			children = (
+				7191569C1D1D3BE900FC55C9 /* Info.plist */,
+			);
+			path = "JSONWebToken tvOS";
+			sourceTree = "<group>";
+		};
+		719156A51D1D3BE900FC55C9 /* JSONWebToken tvOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				719156A81D1D3BE900FC55C9 /* Info.plist */,
+			);
+			path = "JSONWebToken tvOSTests";
+			sourceTree = "<group>";
+		};
+		71EA699A1C0320630081AF85 /* Validator */ = {
+			isa = PBXGroup;
+			children = (
+				717ACFF61BFC7BB8004E01D0 /* SignatureValidator.swift */,
+				7148BEA21BFF6FF500CD17E7 /* ClaimValidator.swift */,
+				71EA699B1C0320720081AF85 /* TokenValidator.swift */,
+			);
+			name = Validator;
+			sourceTree = "<group>";
+		};
+		71EA69A61C035EB50081AF85 /* Samples */ = {
+			isa = PBXGroup;
+			children = (
+				71D9179F1C07573300FA5CDE /* TestCertificate.cer */,
+				718A7E001C06277E00A819DD /* public.exponent */,
+				718A7E011C06277E00A819DD /* public.modulus */,
+				717FCFCA1C060CDA00C7DDEB /* invalid_aud_format.jwt */,
+				717FCFCB1C060CDA00C7DDEB /* invalid_exp_format.jwt */,
+				717FCFCC1C060CDA00C7DDEB /* invalid_expired.jwt */,
+				717FCFCD1C060CDA00C7DDEB /* invalid_iat_format.jwt */,
+				717FCFCE1C060CDA00C7DDEB /* invalid_iss_format.jwt */,
+				717FCFCF1C060CDA00C7DDEB /* invalid_jti_format.jwt */,
+				717FCFD01C060CDA00C7DDEB /* invalid_nbf_format.jwt */,
+				717FCFD11C060CDA00C7DDEB /* invalid_nbf_immature.jwt */,
+				717FCFD21C060CDA00C7DDEB /* invalid_sub_format.jwt */,
+				719454131C05FE510043493C /* ES256.jwt */,
+				719454141C05FE510043493C /* ES384.jwt */,
+				719454151C05FE510043493C /* ES512.jwt */,
+				7194540B1C05FBBB0043493C /* PS256.jwt */,
+				7194540C1C05FBBB0043493C /* PS384.jwt */,
+				7194540D1C05FBBB0043493C /* PS512.jwt */,
+				719454091C05F4CB0043493C /* identity.p12 */,
+				719089AC1C04649700A7A209 /* private.pem */,
+				719089AD1C04649700A7A209 /* public.pem */,
+				719089DA1C04BD2B00A7A209 /* invalid_missing_alg.jwt */,
+				719089DB1C04BD2B00A7A209 /* invalid_alg.jwt */,
+				719089DC1C04BD2B00A7A209 /* valid_missing_typ.jwt */,
+				719089DD1C04BD2B00A7A209 /* invalid_typ.jwt */,
+				719089D61C04B86900A7A209 /* invalid_payload_json_structure.jwt */,
+				719089D71C04B86900A7A209 /* invalid_header_json_structure.jwt */,
+				719089D21C04B6B900A7A209 /* invalid_header_json.jwt */,
+				719089D31C04B6B900A7A209 /* invalid_payload_json.jwt */,
+				719089CC1C04AFED00A7A209 /* invalid_header_base64.jwt */,
+				719089CD1C04AFED00A7A209 /* invalid_payload_base64.jwt */,
+				719089CE1C04AFED00A7A209 /* invalid_signature_base64.jwt */,
+				719089C61C04AD1500A7A209 /* invalid_structure_2.jwt */,
+				719089C71C04AD1500A7A209 /* invalid_structure.jwt */,
+				719089BC1C049E3B00A7A209 /* all_claim_valid_1.jwt */,
+				719089BE1C049EC400A7A209 /* all_claim_valid_2.jwt */,
+				719089C21C049FBE00A7A209 /* all_claim_valid_2_signed.jwt */,
+				719089B61C0477D500A7A209 /* RS256_2.jwt */,
+				719089B71C0477D500A7A209 /* RS384_2.jwt */,
+				719089B81C0477D500A7A209 /* RS512_2.jwt */,
+				719089AE1C04649700A7A209 /* RS256.jwt */,
+				719089AF1C04649700A7A209 /* RS384.jwt */,
+				719089B01C04649700A7A209 /* RS512.jwt */,
+				719089A61C045B9700A7A209 /* HS256.jwt */,
+				719089A71C045B9700A7A209 /* HS384.jwt */,
+				719089A81C045B9700A7A209 /* HS512.jwt */,
+				718A7DF81C06149900A819DD /* empty2.jwt */,
+				719089C41C04AA0100A7A209 /* empty.jwt */,
+				719089A41C0455B700A7A209 /* GenerateSample.py */,
+			);
+			path = Samples;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		717ACFCB1BFB6842004E01D0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				717ACFFC1BFC827E004E01D0 /* NSData+HMAC.h in Headers */,
+				71D1C1251BFE236F00211578 /* NSData+SHA.h in Headers */,
+				717ACFD21BFB6842004E01D0 /* JSONWebToken.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		719156951D1D3BE900FC55C9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				719156F61D1D3C9E00FC55C9 /* NSData+SHA.h in Headers */,
+				719156F71D1D3C9E00FC55C9 /* NSData+HMAC.h in Headers */,
+				719156AF1D1D3BF900FC55C9 /* JSONWebToken.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		71642F3E1D9BB1F2008BBA95 /* TestContainer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 71642F4E1D9BB1F2008BBA95 /* Build configuration list for PBXNativeTarget "TestContainer" */;
+			buildPhases = (
+				71642F3B1D9BB1F2008BBA95 /* Sources */,
+				71642F3C1D9BB1F2008BBA95 /* Frameworks */,
+				71642F3D1D9BB1F2008BBA95 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TestContainer;
+			productName = TestContainer;
+			productReference = 71642F3F1D9BB1F2008BBA95 /* TestContainer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		717ACFCD1BFB6842004E01D0 /* JSONWebToken */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 717ACFE21BFB6842004E01D0 /* Build configuration list for PBXNativeTarget "JSONWebToken" */;
+			buildPhases = (
+				717ACFC91BFB6842004E01D0 /* Sources */,
+				717ACFCA1BFB6842004E01D0 /* Frameworks */,
+				717ACFCB1BFB6842004E01D0 /* Headers */,
+				717ACFCC1BFB6842004E01D0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JSONWebToken;
+			productName = JSONWebToken;
+			productReference = 717ACFCE1BFB6842004E01D0 /* JSONWebToken.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		717ACFD71BFB6842004E01D0 /* JSONWebTokenTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 717ACFE51BFB6842004E01D0 /* Build configuration list for PBXNativeTarget "JSONWebTokenTests" */;
+			buildPhases = (
+				717ACFD41BFB6842004E01D0 /* Sources */,
+				717ACFD51BFB6842004E01D0 /* Frameworks */,
+				717ACFD61BFB6842004E01D0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7190899E1C036F6B00A7A209 /* PBXTargetDependency */,
+				71642F521D9BB210008BBA95 /* PBXTargetDependency */,
+			);
+			name = JSONWebTokenTests;
+			productName = JSONWebTokenTests;
+			productReference = 717ACFD81BFB6842004E01D0 /* JSONWebTokenTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		719156971D1D3BE900FC55C9 /* JSONWebToken tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 719156AD1D1D3BE900FC55C9 /* Build configuration list for PBXNativeTarget "JSONWebToken tvOS" */;
+			buildPhases = (
+				719156931D1D3BE900FC55C9 /* Sources */,
+				719156941D1D3BE900FC55C9 /* Frameworks */,
+				719156951D1D3BE900FC55C9 /* Headers */,
+				719156961D1D3BE900FC55C9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "JSONWebToken tvOS";
+			productName = "JSONWebToken tvOS";
+			productReference = 719156981D1D3BE900FC55C9 /* JSONWebToken.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		719156A01D1D3BE900FC55C9 /* JSONWebToken tvOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 719156AE1D1D3BE900FC55C9 /* Build configuration list for PBXNativeTarget "JSONWebToken tvOSTests" */;
+			buildPhases = (
+				7191569D1D1D3BE900FC55C9 /* Sources */,
+				7191569E1D1D3BE900FC55C9 /* Frameworks */,
+				7191569F1D1D3BE900FC55C9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				719156A41D1D3BE900FC55C9 /* PBXTargetDependency */,
+			);
+			name = "JSONWebToken tvOSTests";
+			productName = "JSONWebToken tvOSTests";
+			productReference = 719156A11D1D3BE900FC55C9 /* JSONWebToken tvOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		717ACFC51BFB6842004E01D0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Antoine Palazzolo";
+				TargetAttributes = {
+					71642F3E1D9BB1F2008BBA95 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = GFAP5NDM59;
+						LastSwiftMigration = 1020;
+						ProvisioningStyle = Automatic;
+					};
+					717ACFCD1BFB6842004E01D0 = {
+						CreatedOnToolsVersion = 7.1.1;
+						LastSwiftMigration = 1020;
+					};
+					717ACFD71BFB6842004E01D0 = {
+						CreatedOnToolsVersion = 7.1.1;
+						LastSwiftMigration = 1020;
+						ProvisioningStyle = Manual;
+						TestTargetID = 71642F3E1D9BB1F2008BBA95;
+					};
+					719156971D1D3BE900FC55C9 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					719156A01D1D3BE900FC55C9 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = BA9C8TYC7C;
+					};
+				};
+			};
+			buildConfigurationList = 717ACFC81BFB6842004E01D0 /* Build configuration list for PBXProject "JSONWebToken" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 717ACFC41BFB6842004E01D0;
+			productRefGroup = 717ACFCF1BFB6842004E01D0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				717ACFCD1BFB6842004E01D0 /* JSONWebToken */,
+				717ACFD71BFB6842004E01D0 /* JSONWebTokenTests */,
+				719156971D1D3BE900FC55C9 /* JSONWebToken tvOS */,
+				719156A01D1D3BE900FC55C9 /* JSONWebToken tvOSTests */,
+				71642F3E1D9BB1F2008BBA95 /* TestContainer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		71642F3D1D9BB1F2008BBA95 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71642F4C1D9BB1F2008BBA95 /* LaunchScreen.storyboard in Resources */,
+				71642F491D9BB1F2008BBA95 /* Assets.xcassets in Resources */,
+				71642F471D9BB1F2008BBA95 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		717ACFCC1BFB6842004E01D0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		717ACFD61BFB6842004E01D0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				719089BF1C049EC400A7A209 /* all_claim_valid_2.jwt in Resources */,
+				719089D91C04B86900A7A209 /* invalid_header_json_structure.jwt in Resources */,
+				717FCFD81C060CDA00C7DDEB /* invalid_jti_format.jwt in Resources */,
+				719089B41C04649700A7A209 /* RS384.jwt in Resources */,
+				717FCFD31C060CDA00C7DDEB /* invalid_aud_format.jwt in Resources */,
+				719089AA1C045B9700A7A209 /* HS384.jwt in Resources */,
+				719454171C05FE510043493C /* ES384.jwt in Resources */,
+				719089C91C04AD1500A7A209 /* invalid_structure.jwt in Resources */,
+				71D917A01C07573300FA5CDE /* TestCertificate.cer in Resources */,
+				719089B31C04649700A7A209 /* RS256.jwt in Resources */,
+				717FCFDB1C060CDA00C7DDEB /* invalid_sub_format.jwt in Resources */,
+				719089CF1C04AFED00A7A209 /* invalid_header_base64.jwt in Resources */,
+				717FCFD91C060CDA00C7DDEB /* invalid_nbf_format.jwt in Resources */,
+				719089D41C04B6B900A7A209 /* invalid_header_json.jwt in Resources */,
+				717FCFD51C060CDA00C7DDEB /* invalid_expired.jwt in Resources */,
+				719089A91C045B9700A7A209 /* HS256.jwt in Resources */,
+				719089BB1C0477D500A7A209 /* RS512_2.jwt in Resources */,
+				719089BD1C049E3B00A7A209 /* all_claim_valid_1.jwt in Resources */,
+				719089B21C04649700A7A209 /* public.pem in Resources */,
+				719089B91C0477D500A7A209 /* RS256_2.jwt in Resources */,
+				719089C31C049FBE00A7A209 /* all_claim_valid_2_signed.jwt in Resources */,
+				7194540F1C05FBBB0043493C /* PS384.jwt in Resources */,
+				719089E11C04BD2B00A7A209 /* invalid_typ.jwt in Resources */,
+				719089C81C04AD1500A7A209 /* invalid_structure_2.jwt in Resources */,
+				719089A51C0455B700A7A209 /* GenerateSample.py in Resources */,
+				718A7DF91C06149900A819DD /* empty2.jwt in Resources */,
+				719089C51C04AA0100A7A209 /* empty.jwt in Resources */,
+				719089E01C04BD2B00A7A209 /* valid_missing_typ.jwt in Resources */,
+				719089AB1C045B9700A7A209 /* HS512.jwt in Resources */,
+				719089D51C04B6B900A7A209 /* invalid_payload_json.jwt in Resources */,
+				719089DF1C04BD2B00A7A209 /* invalid_alg.jwt in Resources */,
+				719089D11C04AFED00A7A209 /* invalid_signature_base64.jwt in Resources */,
+				7194540A1C05F6AC0043493C /* identity.p12 in Resources */,
+				717FCFDA1C060CDA00C7DDEB /* invalid_nbf_immature.jwt in Resources */,
+				719089B11C04649700A7A209 /* private.pem in Resources */,
+				717FCFD41C060CDA00C7DDEB /* invalid_exp_format.jwt in Resources */,
+				719089D01C04AFED00A7A209 /* invalid_payload_base64.jwt in Resources */,
+				719454181C05FE510043493C /* ES512.jwt in Resources */,
+				719089B51C04649700A7A209 /* RS512.jwt in Resources */,
+				719454101C05FBBB0043493C /* PS512.jwt in Resources */,
+				719089DE1C04BD2B00A7A209 /* invalid_missing_alg.jwt in Resources */,
+				718A7E021C06277E00A819DD /* public.exponent in Resources */,
+				7194540E1C05FBBB0043493C /* PS256.jwt in Resources */,
+				718A7E031C06277E00A819DD /* public.modulus in Resources */,
+				717FCFD71C060CDA00C7DDEB /* invalid_iss_format.jwt in Resources */,
+				719454161C05FE510043493C /* ES256.jwt in Resources */,
+				717FCFD61C060CDA00C7DDEB /* invalid_iat_format.jwt in Resources */,
+				719089D81C04B86900A7A209 /* invalid_payload_json_structure.jwt in Resources */,
+				719089BA1C0477D500A7A209 /* RS384_2.jwt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		719156961D1D3BE900FC55C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7191569F1D1D3BE900FC55C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				719156B01D1D3C0F00FC55C9 /* TestCertificate.cer in Resources */,
+				719156DD1D1D3C0F00FC55C9 /* HS512.jwt in Resources */,
+				719156CD1D1D3C0F00FC55C9 /* invalid_header_base64.jwt in Resources */,
+				719156C51D1D3C0F00FC55C9 /* invalid_missing_alg.jwt in Resources */,
+				719156C91D1D3C0F00FC55C9 /* invalid_payload_json_structure.jwt in Resources */,
+				719156DB1D1D3C0F00FC55C9 /* HS256.jwt in Resources */,
+				719156DE1D1D3C0F00FC55C9 /* empty2.jwt in Resources */,
+				719156D71D1D3C0F00FC55C9 /* RS512_2.jwt in Resources */,
+				719156C21D1D3C0F00FC55C9 /* identity.p12 in Resources */,
+				719156C11D1D3C0F00FC55C9 /* PS512.jwt in Resources */,
+				719156B51D1D3C0F00FC55C9 /* invalid_expired.jwt in Resources */,
+				719156DF1D1D3C0F00FC55C9 /* empty.jwt in Resources */,
+				719156D91D1D3C0F00FC55C9 /* RS384.jwt in Resources */,
+				719156CB1D1D3C0F00FC55C9 /* invalid_header_json.jwt in Resources */,
+				719156B31D1D3C0F00FC55C9 /* invalid_aud_format.jwt in Resources */,
+				719156B11D1D3C0F00FC55C9 /* public.exponent in Resources */,
+				719156C31D1D3C0F00FC55C9 /* private.pem in Resources */,
+				719156C01D1D3C0F00FC55C9 /* PS384.jwt in Resources */,
+				719156CE1D1D3C0F00FC55C9 /* invalid_payload_base64.jwt in Resources */,
+				719156BC1D1D3C0F00FC55C9 /* ES256.jwt in Resources */,
+				719156B41D1D3C0F00FC55C9 /* invalid_exp_format.jwt in Resources */,
+				719156B61D1D3C0F00FC55C9 /* invalid_iat_format.jwt in Resources */,
+				719156CC1D1D3C0F00FC55C9 /* invalid_payload_json.jwt in Resources */,
+				719156B71D1D3C0F00FC55C9 /* invalid_iss_format.jwt in Resources */,
+				719156D81D1D3C0F00FC55C9 /* RS256.jwt in Resources */,
+				719156C71D1D3C0F00FC55C9 /* valid_missing_typ.jwt in Resources */,
+				719156CA1D1D3C0F00FC55C9 /* invalid_header_json_structure.jwt in Resources */,
+				719156DC1D1D3C0F00FC55C9 /* HS384.jwt in Resources */,
+				719156E01D1D3C0F00FC55C9 /* GenerateSample.py in Resources */,
+				719156B21D1D3C0F00FC55C9 /* public.modulus in Resources */,
+				719156D51D1D3C0F00FC55C9 /* RS256_2.jwt in Resources */,
+				719156D41D1D3C0F00FC55C9 /* all_claim_valid_2_signed.jwt in Resources */,
+				719156D01D1D3C0F00FC55C9 /* invalid_structure_2.jwt in Resources */,
+				719156BA1D1D3C0F00FC55C9 /* invalid_nbf_immature.jwt in Resources */,
+				719156BB1D1D3C0F00FC55C9 /* invalid_sub_format.jwt in Resources */,
+				719156D21D1D3C0F00FC55C9 /* all_claim_valid_1.jwt in Resources */,
+				719156BD1D1D3C0F00FC55C9 /* ES384.jwt in Resources */,
+				719156C81D1D3C0F00FC55C9 /* invalid_typ.jwt in Resources */,
+				719156BF1D1D3C0F00FC55C9 /* PS256.jwt in Resources */,
+				719156D11D1D3C0F00FC55C9 /* invalid_structure.jwt in Resources */,
+				719156B81D1D3C0F00FC55C9 /* invalid_jti_format.jwt in Resources */,
+				719156CF1D1D3C0F00FC55C9 /* invalid_signature_base64.jwt in Resources */,
+				719156C41D1D3C0F00FC55C9 /* public.pem in Resources */,
+				719156BE1D1D3C0F00FC55C9 /* ES512.jwt in Resources */,
+				719156D61D1D3C0F00FC55C9 /* RS384_2.jwt in Resources */,
+				719156C61D1D3C0F00FC55C9 /* invalid_alg.jwt in Resources */,
+				719156DA1D1D3C0F00FC55C9 /* RS512.jwt in Resources */,
+				719156D31D1D3C0F00FC55C9 /* all_claim_valid_2.jwt in Resources */,
+				719156B91D1D3C0F00FC55C9 /* invalid_nbf_format.jwt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		71642F3B1D9BB1F2008BBA95 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71642F441D9BB1F2008BBA95 /* ViewController.swift in Sources */,
+				71642F421D9BB1F2008BBA95 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		717ACFC91BFB6842004E01D0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				717ACFFF1BFC8393004E01D0 /* SignatureAlgorithm.swift in Sources */,
+				71EA699F1C0323320081AF85 /* TokenSigner.swift in Sources */,
+				71D1C1261BFE236F00211578 /* NSData+SHA.m in Sources */,
+				71D1C1221BFCB92200211578 /* RSASSA_PKCS1.swift in Sources */,
+				717ACFFD1BFC827E004E01D0 /* NSData+HMAC.m in Sources */,
+				7148BEA11BFF0B0B00CD17E7 /* SecKeyUtils.swift in Sources */,
+				717ACFE91BFB69EB004E01D0 /* JSONWebToken.swift in Sources */,
+				7148BEA31BFF6FF500CD17E7 /* ClaimValidator.swift in Sources */,
+				717ACFF51BFB8113004E01D0 /* NSData+Base64URLEncoding.swift in Sources */,
+				717ACFF91BFC81CB004E01D0 /* HMAC.swift in Sources */,
+				71EA699C1C0320720081AF85 /* TokenValidator.swift in Sources */,
+				717ACFF71BFC7BB8004E01D0 /* SignatureValidator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		717ACFD41BFB6842004E01D0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				719089CB1C04AD6B00A7A209 /* DecodeTests.swift in Sources */,
+				718A7DFB1C06175200A819DD /* KeyUtilsTests.swift in Sources */,
+				719089C11C049F1400A7A209 /* ClaimTests.swift in Sources */,
+				719454121C05FBC90043493C /* RSASSA_PSSTests.swift in Sources */,
+				717ACFDE1BFB6842004E01D0 /* RSASSA_PKCS1Tests.swift in Sources */,
+				7194541C1C0600EA0043493C /* GenerateTests.swift in Sources */,
+				7148BE9D1BFE2FA400CD17E7 /* TestUtils.swift in Sources */,
+				7194541A1C05FE990043493C /* ECDSATests.swift in Sources */,
+				71936BEF1C0361D60005DF5A /* HMACTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		719156931D1D3BE900FC55C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				719156EB1D1D3C8F00FC55C9 /* SignatureAlgorithm.swift in Sources */,
+				719156EA1D1D3C8F00FC55C9 /* JSONWebToken.swift in Sources */,
+				719156EC1D1D3C8F00FC55C9 /* TokenSigner.swift in Sources */,
+				719156F11D1D3C9B00FC55C9 /* RSASSA_PKCS1.swift in Sources */,
+				719156EE1D1D3C9300FC55C9 /* ClaimValidator.swift in Sources */,
+				719156F31D1D3C9B00FC55C9 /* NSData+HMAC.m in Sources */,
+				719156EF1D1D3C9300FC55C9 /* TokenValidator.swift in Sources */,
+				719156F01D1D3C9B00FC55C9 /* HMAC.swift in Sources */,
+				719156ED1D1D3C9300FC55C9 /* SignatureValidator.swift in Sources */,
+				719156F51D1D3C9B00FC55C9 /* SecKeyUtils.swift in Sources */,
+				719156F41D1D3C9B00FC55C9 /* NSData+Base64URLEncoding.swift in Sources */,
+				719156F21D1D3C9B00FC55C9 /* NSData+SHA.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7191569D1D1D3BE900FC55C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				719156E71D1D3C1900FC55C9 /* DecodeTests.swift in Sources */,
+				719156E91D1D3C1900FC55C9 /* KeyUtilsTests.swift in Sources */,
+				719156E61D1D3C1900FC55C9 /* ECDSATests.swift in Sources */,
+				719156E41D1D3C1900FC55C9 /* ClaimTests.swift in Sources */,
+				719156E11D1D3C1900FC55C9 /* HMACTests.swift in Sources */,
+				719156E81D1D3C1900FC55C9 /* GenerateTests.swift in Sources */,
+				719156E31D1D3C1900FC55C9 /* TestUtils.swift in Sources */,
+				719156E21D1D3C1900FC55C9 /* RSASSA_PKCS1Tests.swift in Sources */,
+				719156E51D1D3C1900FC55C9 /* RSASSA_PSSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		71642F521D9BB210008BBA95 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 71642F3E1D9BB1F2008BBA95 /* TestContainer */;
+			targetProxy = 71642F511D9BB210008BBA95 /* PBXContainerItemProxy */;
+		};
+		7190899E1C036F6B00A7A209 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 717ACFCD1BFB6842004E01D0 /* JSONWebToken */;
+			targetProxy = 7190899D1C036F6B00A7A209 /* PBXContainerItemProxy */;
+		};
+		719156A41D1D3BE900FC55C9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 719156971D1D3BE900FC55C9 /* JSONWebToken tvOS */;
+			targetProxy = 719156A31D1D3BE900FC55C9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		71642F451D9BB1F2008BBA95 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				71642F461D9BB1F2008BBA95 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		71642F4A1D9BB1F2008BBA95 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				71642F4B1D9BB1F2008BBA95 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		71642F4F1D9BB1F2008BBA95 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CODE_SIGN_ENTITLEMENTS = JSONWebToken/JSONWebToken.entitlements;
+				DEVELOPMENT_TEAM = GFAP5NDM59;
+				INFOPLIST_FILE = TestContainer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Kreactive.TestContainer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		71642F501D9BB1F2008BBA95 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CODE_SIGN_ENTITLEMENTS = JSONWebToken/JSONWebToken.entitlements;
+				DEVELOPMENT_TEAM = GFAP5NDM59;
+				INFOPLIST_FILE = TestContainer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Kreactive.TestContainer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		717ACFE01BFB6842004E01D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		717ACFE11BFB6842004E01D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		717ACFE31BFB6842004E01D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = JSONWebToken/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kreactive.JSONWebToken;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		717ACFE41BFB6842004E01D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = JSONWebToken/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kreactive.JSONWebToken;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		717ACFE61BFB6842004E01D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = JSONWebTokenTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kreactive.JSONWebTokenTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestContainer.app/TestContainer";
+			};
+			name = Debug;
+		};
+		717ACFE71BFB6842004E01D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = JSONWebTokenTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kreactive.JSONWebTokenTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestContainer.app/TestContainer";
+			};
+			name = Release;
+		};
+		719156A91D1D3BE900FC55C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "JSONWebToken tvOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kreactive.JSONWebToken;
+				PRODUCT_NAME = JSONWebToken;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Debug;
+		};
+		719156AA1D1D3BE900FC55C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "JSONWebToken tvOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kreactive.JSONWebToken;
+				PRODUCT_NAME = JSONWebToken;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Release;
+		};
+		719156AB1D1D3BE900FC55C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				INFOPLIST_FILE = "JSONWebToken tvOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Kreactive.JSONWebToken-tvOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Debug;
+		};
+		719156AC1D1D3BE900FC55C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				INFOPLIST_FILE = "JSONWebToken tvOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Kreactive.JSONWebToken-tvOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		71642F4E1D9BB1F2008BBA95 /* Build configuration list for PBXNativeTarget "TestContainer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71642F4F1D9BB1F2008BBA95 /* Debug */,
+				71642F501D9BB1F2008BBA95 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		717ACFC81BFB6842004E01D0 /* Build configuration list for PBXProject "JSONWebToken" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				717ACFE01BFB6842004E01D0 /* Debug */,
+				717ACFE11BFB6842004E01D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		717ACFE21BFB6842004E01D0 /* Build configuration list for PBXNativeTarget "JSONWebToken" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				717ACFE31BFB6842004E01D0 /* Debug */,
+				717ACFE41BFB6842004E01D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		717ACFE51BFB6842004E01D0 /* Build configuration list for PBXNativeTarget "JSONWebTokenTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				717ACFE61BFB6842004E01D0 /* Debug */,
+				717ACFE71BFB6842004E01D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		719156AD1D1D3BE900FC55C9 /* Build configuration list for PBXNativeTarget "JSONWebToken tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				719156A91D1D3BE900FC55C9 /* Debug */,
+				719156AA1D1D3BE900FC55C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		719156AE1D1D3BE900FC55C9 /* Build configuration list for PBXNativeTarget "JSONWebToken tvOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				719156AB1D1D3BE900FC55C9 /* Debug */,
+				719156AC1D1D3BE900FC55C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 717ACFC51BFB6842004E01D0 /* Project object */;
+}
